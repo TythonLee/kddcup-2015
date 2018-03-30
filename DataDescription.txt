@@ -27,12 +27,12 @@ train.7z
 
 train.7z contains training data.
 
-enrollment_train.csv â€�? eeach line is a course enrollment record with an enrollment id, a username U and a course id C, indicating that U enrolled in course C.
-- enrollment_id â€�? Enrollment ID
+enrollment_train.csv - each line is a course enrollment record with an enrollment id, a username U and a course id C, indicating that U enrolled in course C.
+- enrollment_id - Enrollment ID
 - username - Student ID.
 - course_id - Course ID.
 
-log_train.csv â€�? each line is a behavior record called â€œeventâ€�?. Each event contains the following information: enrollment_id, username, course_id, time, source (server or browser), event, and object. 
+log_train.csv - each line is a behavior record called login event. Each event contains the following information: enrollment_id, username, course_id, time, source (server or browser), event, and object. 
 - enrollment_id - Enrollment ID.
 - time - Time of the event.
 - source - Event source (server or browser).
@@ -43,10 +43,10 @@ log_train.csv â€�? each line is a behavior record called â€œeventâ€�?
   4. wiki - Accessing the course wiki.
   5. discussion - Accessing the course forum.
   6. navigate - Navigating to other part of the course.
-  7. page_close â€�? Closing the web page.
+  7. page_close - Closing the web page.
 - object - The object the student access or navigate to.
 
-true_trian.csv â€�? each line contains information about the ground truth of enrollments in the training set. 
+true_trian.csv - each line contains information about the ground truth of enrollments in the training set. 
 - 1st column - Enrollment ID. 
 - 2nd column - Ground truth of dropout (1 for a dropout event and 0 for continuing study)
 
